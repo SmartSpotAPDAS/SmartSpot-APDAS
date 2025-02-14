@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAutomated parking lot management system portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2cec75184.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="--input here the image" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Significance</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>12 STEM-1 Group 4 Blue Output</p>
+            <h1>Introducing the<br><span>APDAS</span></h1>
+        </div>
+    </div>
+</div>
+
+<!--about-->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Screenshot 2024-10-01 203124.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About the Prototype</h1>
+                <p>Description blablabla
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('design')">Design</p>
+                        <p class="tab-links" onclick="opentab('function')">Function</p>
+                        <p class="tab-links" onclick="opentab('how-to-use')">How to use</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="design">
+                        <ul>
+                            <li>
+                                <video autoplay muted loop>
+                                    <source src="475812389_29250260267906528_8052005224822638710_n.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </li>
+                        </ul>
+                    </div>                                     
+                    <div class="tab-contents" id="function">
+                        <ul>
+                            <li><span>Function #1</span><br>[Details]</li>
+                            <li><span>Function #2</span><br>[Details]</li>
+                            <li><span>Function #3</span><br>[Details]</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="how-to-use">
+                        <ul>
+                            <li><span>Step 1</span><br>[Details]</li>
+                            <li><span>Step 2</span><br>[Details]</li>
+                            <li><span>Step 3</span><br>[Details]</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---significance-->
+<div id="Significance">
+    <div class="container">
+        <h1 class="sub-title">Significance</h1>
+        <div class="last-two">
+            <div>
+                <i class="fa-solid fa-car-side"></i>
+                <h2><b>Car Drivers</b></h2>
+                <p>[Details]</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <h2><b>Establishments with<br>Parking Facilities</b></h2>
+                <p>[Details]</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        <div class="significance-list">
+            <div>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h2><b>Electrical Engineers</b></h2>
+                <p>[Details]</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2><b>Electronic Engineers</b></h2>
+                <p>[Details]</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2><b>Software Engineers</b></h2>
+                <p>[Details]</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
