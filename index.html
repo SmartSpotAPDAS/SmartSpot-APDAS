@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Parking Detection and Allocation System Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2cec75184.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Significance">Benefactors</a></li>
+                <li><a href="#portfolio">Significance</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>12 STEM-1 Group 4 Blue Output</p>
+            <h1>Introducing the<br><span>APDAS</span></h1>
+        </div>     
+    </div>
+</div>
+
+<!--about-->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1 class="sub-title">About the Prototype</h1>
+                <p>Tired of endless parking lot searches? Introducing the <b>Automatic Parking Lot Detection 
+                    and Allocation System (APDAS)!</b><br> 
+                    <br>This innovative prototype revolutionizes parking by 
+                    guiding you directly to your assigned spot, eliminating frustration and saving you precious 
+                    time. Say goodbye to parking woes and hello to seamless, stress-free parking with APDAS! 
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('design')">Design</p>
+                        <p class="tab-links" onclick="opentab('function')">Function</p>
+                        <p class="tab-links" onclick="opentab('how-to-use')">How to use</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="design">
+                        <ul>
+                            <section>
+                                <li><span><b>3D Model 360° Rotation</b></span></li>
+                                <video autoplay muted loop>
+                                <source src="3d_model.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+                            </section>
+                            <section>
+                                <li><span><b>Top Down View with Labels</b></span></li>
+                                <img src="top_down.jpg">
+                            </section>
+                            <section>
+                                <li><span><b>Materials Used</b></span></li>
+                                <img src="materials.png">
+                            </section>
+                        </ul>
+                    </div>                                     
+                    <div class="tab-contents" id="function">
+                        <ul>
+                            <section>
+                                <li><span><b>Flowchart of the Prototype's Function</span></b></li>
+                            <img src="function.png">
+                            </section>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="how-to-use">
+                        <ul>
+                            <section>
+                            <li><span><b><u>Step 1</span></u></b><br>Let your vehicle go closer to the gate.</li>
+                            <li><span><b><u>Step 2</span></u></b><br>Input your plate number to the kiosk.</li>
+                            <li><span><b><u>Step 3</span></u></b><br>Let the system process to assign the
+                                nearest available parking space to you.</li>
+                            <li><span><b>Step 4</span></b><br>Get the receipt that it provided. Proceed 
+                                to the parking area (You caneasily find the parking space via
+                                signboards and numberings of eachspaces on the parking area.)</li>
+                            </section>
+                            <video autoplay muted loop>
+                                <source src="how-to-use.mp4">
+                            </video>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---significance-->
+<div id="Significance">
+    <div class="container">
+        <h1 class="sub-title">Benefactors</h1>
+        <div class="significance-list">
+            <div>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h2><b>Engineers</b></h2>
+                <p>The Automatic Parking Lot Detection and Allocation System (APDAS) prototype is a significant 
+                    opportunity for Electrical, Electronic, and Software Engineers to bridge the gap between 
+                    theoretical knowledge and practical application. It demonstrates how core engineering principles 
+                    can be applied to design and implement real-world automated systems, encouraging innovation in 
+                    smart parking solutions and energy-efficient technologies. APDAS provides a platform for refining 
+                    skills in sensor integration, actuator control, and software algorithm design, allowing engineers 
+                    to solve real-world problems like traffic congestion and parking availability.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-car-side"></i>
+                <h2><b>Car Drivers</b></h2>
+                <p>The APDAS prototype offers a transformative parking experience by automating parking allocation 
+                    and guidance, reducing driver frustration and stress. It streamlines the process with designated 
+                    parking spots and real-time information, contributing to improved traffic flow in urban areas 
+                    and enhancing overall mobility. The time saved by using the APDAS system can be used for more 
+                    productive tasks.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <h2><b>Establishments with<br>Parking Facilities</b></h2>
+                <p>The APDAS prototype offers easier parking and promises effective parking security, flexibility, 
+                    and safety to improve customer satisfaction and increase productivity. The establishment's 
+                    parking units will also attract more audience because of the APDAS and its innovative and 
+                    eye-catching design and functions
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Significance</h1>
+        <div class="model-list">
+            <div class="eg">
+                <img src="benefits_1.jpg">
+                <div class="layer">
+                    <h3><b>Navigate Available Space Easier</b></h3>
+                    <p>Provides real-time guidance, allowing drivers to quickly locate and access 
+                    the nearest available parking spot without unnecessary searching.</p>
+                </div>
+            </div>
+            <div class="eg">
+                <img src="benefits_2.jpg">
+                <div class="layer">
+                    <h3><b>Minimize Time and Fuel Consumption</b></h3>
+                    <p>Helps decrease fuel wastage and emissions, promoting a more eco-friendly and 
+                    cost-efficient parking experience.
+                    </p>
+                </div>
+            </div>
+            <div class="eg">
+                <img src="benefits_3.png">
+                <div class="layer">
+                    <h3><b>Better Overall Parking Experience</b></h3>
+                    <p>Ensures a stress-free experience for drivers by eliminating common parking 
+                    frustrations, such as long queues, misallocated spaces, and unnecessary delays.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact.apdas@gmail.com</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Website Inspired by <br> Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhlv2M-kjkPuwCMicMB9K9u_Fc8SuPHi2oKnOJFCK51nj1-cNJpvA62MfgpkV7NwwO_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+
+</body>
+</html>
